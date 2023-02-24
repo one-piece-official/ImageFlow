@@ -1,0 +1,29 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url https://csj5588.github.io/dynamic-card"
+  },
+  "dependencies": {
+    "react-app-polyfill": "^1.0.6",
+    "styled-components": "^5.1.0"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom/profiling",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "4.1.8",
+    "parcel": "^1.12.3",
+    "typescript": "^3.4.5",
+    "gl-react": "5.2.0",
+    "gl-react-dom": "5.2.0",
+    "hoist-non-react-statics": "3.3.2"
+  }
+}
