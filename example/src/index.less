@@ -129,6 +129,13 @@
 .text-red {
   color: orange;
 }
+.effectBox{
+  position: relative;
+  box-sizing: border-box;
+  &:hover{
+    cursor: pointer;
+  }
+}
 .main{
   padding: 0 50px;
   .box{
@@ -136,10 +143,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+    img{
+      display: block;
+    }
     .describe{
       height: 690px;
       padding: 0 100px;
       border: 1px solid #E7E6E6;
+      border-left: none;
       display: flex;
       align-items: center;
       justify-content: center;

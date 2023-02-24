@@ -1,9 +1,10 @@
 import * as React from 'react';
 import ImageFlow from './../../src/index'
+import './index.less'
 
 const Dynamic = (props) => {
   return (
-    <div style={{ position: 'relative' }}>
+    <div className='effectBox'>
       {
         props.visible ? (
           <ImageFlow
