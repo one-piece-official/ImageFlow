@@ -42395,14 +42395,14 @@ var Dynamic = function Dynamic(props) {
   return React.createElement("div", {
     className: 'effectBox'
   }, props.visible ? React.createElement(index_1.default, {
-    width: 400,
-    height: 690,
+    width: props.width,
+    height: props.width * 1.5,
     type: props.type,
     url: props.url
   }) : React.createElement("div", {
     style: {
-      width: '400px',
-      height: '690px'
+      width: props.width + "px",
+      height: props.width * 1.5 + "px"
     }
   }), React.createElement("img", {
     style: {
@@ -42412,8 +42412,8 @@ var Dynamic = function Dynamic(props) {
       opacity: props.visible ? 0 : 1,
       transform: "rotateX(" + (props.rotate ? 180 : 0) + "deg)"
     },
-    width: 400,
-    height: 690,
+    width: props.width,
+    height: props.width * 1.5,
     src: "https://s1.ax1x.com/2023/02/23/pSxaBnJ.jpg",
     alt: ""
   }));
@@ -42468,7 +42468,11 @@ require("./index.less");
 var Head = function Head() {
   return React.createElement("div", {
     className: "head-root"
-  }, React.createElement("h1", null, "Welcome to Image Flow"), React.createElement("p", null, "image-flow is a solution to solve the dynamic effect of pictures by ", React.createElement("span", {
+  }, React.createElement("h1", {
+    className: 'title'
+  }, "Welcome to Image Flow"), React.createElement("p", {
+    className: 'describe'
+  }, "image-flow is a solution to solve the dynamic effect of pictures by ", React.createElement("span", {
     className: "text-red"
   }, "OpenGL ES")));
 };
@@ -42617,11 +42621,12 @@ var whiteList = ['Shake', 'Soul', 'Megrim', 'Flashing', 'Rag'];
 var App = function (_super) {
   __extends(App, _super);
 
-  function App() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
+  function App(props) {
+    var _this = _super.call(this, props) || this;
 
     _this.state = {
-      visibleIndex: -1
+      visibleIndex: -1,
+      width: document.body.offsetWidth
     };
     return _this;
   }
@@ -42650,6 +42655,7 @@ var App = function (_super) {
         visible: idx === _this.state.visibleIndex,
         rotate: !whiteList.includes(type),
         type: type,
+        width: _this.state.width,
         url: "https://one-piece-official.github.io/ImageFlow/bg.jpg"
       }), React.createElement("div", {
         className: "describe"
@@ -42689,7 +42695,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59162" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55569" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
