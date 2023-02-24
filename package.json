@@ -1,43 +1,40 @@
 {
-  "homepage": "https://csj5588.github.io/image-flow",
-  "repository": "https://github.com/csj5588/image-flow",
-  "version": "1.0.1",
+  "name": "image-flow",
+  "homepage": "https://github.com/one-piece-official/ImageFlow/tree/master",
+  "repository": "https://github.com/one-piece-official/ImageFlow/tree/master",
+  "version": "1.0.3",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "authors": {
+    "name": "csj5588",
+    "email": "1839333350@qq.com"
+  },
   "files": [
-    "dist",
-    "src",
-    "README.md"
+    "lib"
   ],
   "keywords": [
     "react",
     "component",
-    "dynamic",
-    "cards"
+    "effect",
+    "image",
+    "opengl",
+    "ES"
   ],
   "engines": {
-    "node": ">=10"
+    "node": "14.16.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "babel src --out-dir lib",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "predeploy": "npm run build && cd example && npm run build",
     "deploy": "gh-pages -d ./example/dist",
     "release": "np --no-yarn --no-tests --no-cleanup",
     "docs": "npx readme-md-generator -y"
   },
-  "browserslist": [
-    "last 2 versions",
-    "Android >= 4.4",
-    "iOS >= 9"
-  ],
   "peerDependencies": {
     "react": ">=16.8.0"
   },
@@ -52,12 +49,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "image-flow",
-  "authors": {
-    "name": "csj5588",
-    "email": "1839333350@qq.com"
-  },
-  "module": "dist/image-flow.esm.js",
+  "module": "lib/image-flow.esm.js",
   "devDependencies": {
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.35",

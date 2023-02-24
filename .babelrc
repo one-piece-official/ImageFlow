@@ -1,0 +1,9 @@
+{
+  "presets": ["es2015", "react", "babel-preset-es2016"],
+  "plugins": ["transform-react-jsx"],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"]
+    }
+  }
+}
