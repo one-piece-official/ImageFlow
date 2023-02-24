@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "antd": "^5.2.2",
-    "react": "^15.6.1",
+    "react": "^18.2.0",
     "react-app-polyfill": "^1.0.6",
-    "react-dom": "^15.6.1",
+    "react-dom": "^18.2.0",
     "styled-components": "^5.1.0"
   },
   "alias": {
