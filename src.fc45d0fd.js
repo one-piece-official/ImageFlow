@@ -42626,7 +42626,7 @@ var App = function (_super) {
 
     _this.state = {
       visibleIndex: -1,
-      width: document.body.offsetWidth
+      width: document.body.offsetWidth > 450 ? 450 : document.body.offsetWidth
     };
     return _this;
   }
@@ -42695,7 +42695,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55569" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50806" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
