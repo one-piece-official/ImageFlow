@@ -26,16 +26,12 @@ yarn install image-flow
 ### base
 
 ```javascript
-<DynamicCard>
-  {(key) => {
-    return (
-      <div className="card-demo">
-        <img className="emoji" src="https://z3.ax1x.com/2021/03/23/6To1Ve.png" alt=""/>
-        <p className="block">this card key number with {key}</p>
-      </div>
-    )
-  }}
-</DynamicCard>
+<ImageFlow
+  width={400}
+  height={690}
+  type="Soul"
+  url="https://s1.ax1x.com/2023/02/23/pSxaa1U.jpg"
+/>
 ```
 
 ## Show your support

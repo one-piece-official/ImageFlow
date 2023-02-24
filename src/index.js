@@ -1,5 +1,5 @@
 /**
- * @name GL_Image_Effect
+ * @name ImageFlow
  * @description 图片特效组件
  */
 import React from 'react';
@@ -29,7 +29,7 @@ export const Saturate = timeLoop(({
   )
 });
 
-function GlEffectImage(props) {
+function ImageFlow(props) {
   const {
     width = 450,
     height = 720,
@@ -43,4 +43,4 @@ function GlEffectImage(props) {
     </Surface>
   )
 }
-export default GlEffectImage
+export default ImageFlow

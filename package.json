@@ -2,7 +2,7 @@
   "name": "image-flow",
   "homepage": "https://github.com/one-piece-official/ImageFlow/tree/master",
   "repository": "https://github.com/one-piece-official/ImageFlow/tree/master",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "lib/index.js",
   "authors": {
@@ -21,7 +21,7 @@
     "ES"
   ],
   "engines": {
-    "node": "14.16.2"
+    "node": ">=10"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -51,6 +51,12 @@
   },
   "module": "lib/image-flow.esm.js",
   "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-istanbul": "^2.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
@@ -78,6 +84,10 @@
     "gl-react": "^5.2.0",
     "gl-react-dom": "^5.2.1",
     "prop-types": "^15.7.2",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "lodash": "^4.17.15"
   }
 }

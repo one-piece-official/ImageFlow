@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -20,10 +20,11 @@
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
     "@types/styled-components": "4.1.8",
-    "parcel": "^1.12.3",
-    "typescript": "^3.4.5",
+    "babel-core": "^6.26.3",
     "gl-react": "5.2.0",
     "gl-react-dom": "5.2.0",
-    "hoist-non-react-statics": "3.3.2"
+    "hoist-non-react-statics": "3.3.2",
+    "parcel": "^1.12.3",
+    "typescript": "^3.4.5"
   }
 }

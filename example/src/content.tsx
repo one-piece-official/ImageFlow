@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ImageFlow from './../../src/index'
+import ImageFlow from './../../lib/index'
 
 const Dynamic = (props) => {
   return (
