@@ -8,13 +8,13 @@ const Dynamic = (props) => {
       {
         props.visible ? (
           <ImageFlow
-            width={400}
-            height={690}
+            width={props.width}
+            height={props.width * 1.5}
             type={props.type}
             url={props.url}
           />
         ) : (
-          <div style={{ width: '400px', height: '690px' }}></div>
+          <div style={{ width: `${props.width}px`, height: `${props.width * 1.5}px` }}></div>
         )
       }
       <img
@@ -25,8 +25,8 @@ const Dynamic = (props) => {
           opacity: props.visible ? 0 : 1,
           transform: `rotateX(${props.rotate ? 180 : 0}deg)`
         }}
-        width={400}
-        height={690}
+        width={props.width}
+        height={props.width * 1.5}
         src="https://s1.ax1x.com/2023/02/23/pSxaBnJ.jpg"
         alt=""
       />

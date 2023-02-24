@@ -10,8 +10,12 @@ import Footer from './footer';
 const list = ['ColourDistance', 'CrossWrap', 'CrossZoom', 'Shake', 'Dreamy', 'Flyeye', 'GlitchDisplace', 'GlitchMemories', 'Hexagonalize', 'Soul', 'Luminance', 'Rag', 'Megrim', 'Morph', 'Pixlize', 'Flashing', 'Swirl'];
 const whiteList = ['Shake', 'Soul', 'Megrim', 'Flashing', 'Rag'];
 class App extends React.Component {
-  state = {
-    visibleIndex: -1,
+  constructor(props) {
+    super(props);
+    this.state = {
+      visibleIndex: -1,
+      width: document.body.offsetWidth,
+    }
   }
 
   render () {
@@ -35,6 +39,7 @@ class App extends React.Component {
                     visible={idx === this.state.visibleIndex}
                     rotate={!whiteList.includes(type)}
                     type={type}
+                    width={this.state.width}
                     url="https://one-piece-official.github.io/ImageFlow/bg.jpg"
                   />
                   <div className="describe">
