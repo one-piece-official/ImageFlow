@@ -9,7 +9,7 @@
   </a>
 </p>
 
-### Examples ➡️ 🏠 [Homepage](https://csj5588.github.io/image-flow)
+### 🏠 [Homepage](https://csj5588.github.io/image-flow)
 
 ## Prerequisites
 
