@@ -14,7 +14,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       visibleIndex: -1,
-      width: document.body.offsetWidth,
+      width: document.body.offsetWidth > 450 ? 450 : document.body.offsetWidth,
     }
   }
 
