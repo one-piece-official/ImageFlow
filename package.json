@@ -1,55 +1,15 @@
 {
   "name": "image-flow",
-  "homepage": "https://github.com/one-piece-official/ImageFlow/tree/master",
-  "repository": "https://github.com/one-piece-official/ImageFlow/tree/master",
   "version": "1.0.4",
-  "license": "MIT",
+  "description": "Node Image Effect Component By OpenGl ES",
   "main": "lib/index.js",
-  "authors": {
-    "name": "csj5588",
-    "email": "1839333350@qq.com"
-  },
   "files": [
     "lib"
   ],
-  "keywords": [
-    "react",
-    "component",
-    "effect",
-    "image",
-    "opengl",
-    "ES"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
     "build": "babel src --out-dir lib",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "deploy": "gh-pages -d ./example/dist",
-    "release": "np --no-yarn --no-tests --no-cleanup",
-    "docs": "npx readme-md-generator -y"
+    "deploy": "gh-pages -d ./example/dist"
   },
-  "peerDependencies": {
-    "react": ">=16.8.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": ""
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "module": "lib/image-flow.esm.js",
   "devDependencies": {
     "babel-cli": "^6.0.0",
     "babel-core": "^6.14.0",
@@ -57,34 +17,23 @@
     "babel-plugin-istanbul": "^2.0.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "@types/classnames": "^2.2.10",
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8",
-    "@types/react-transition-group": "^4.2.4",
-    "autoprefixer": "^9.8.0",
-    "cssnano": "^4.1.10",
-    "gh-pages": "^2.2.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "gl-react": "5.2.0",
     "gl-react-dom": "5.2.0",
-    "hoist-non-react-statics": "3.3.2",
-    "husky": "^4.2.5",
-    "less": "^3.11.1",
-    "np": "^6.2.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "rollup-plugin-postcss": "^3.1.1",
-    "tsdx": "^0.13.2",
-    "tslib": "^2.0.0",
-    "typescript": "^3.9.2"
+    "hoist-non-react-statics": "3.3.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/one-piece-official/ImageFlow.git"
+  },
+  "author": "cuishijie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/one-piece-official/ImageFlow/issues"
+  },
+  "homepage": "https://github.com/one-piece-official/ImageFlow#README.md",
   "dependencies": {
-    "@types/gl-react": "^3.15.4",
-    "antd": "^3.26.19",
-    "classnames": "^2.2.6",
-    "gl-react": "^5.2.0",
-    "gl-react-dom": "^5.2.1",
-    "prop-types": "^15.7.2",
-    "react-transition-group": "^4.4.1",
     "babel-preset-env": "^1.3.2",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-stage-2": "^6.22.0",
