@@ -7,7 +7,7 @@ import Head from './head';
 import Footer from './footer';
 
 
-const list = ['ColourDistance', 'CrossWrap', 'CrossZoom', 'Shake', 'Dreamy', 'Flyeye', 'GlitchDisplace', 'GlitchMemories', 'Hexagonalize', 'Soul', 'Luminance', 'Rag', 'Megrim', 'Morph', 'Pixlize', 'Flashing', 'Swirl'];
+const list = ['Morph', 'Soul', 'ColourDistance', 'CrossWrap', 'CrossZoom', 'Shake', 'Dreamy', 'Flyeye', 'GlitchDisplace', 'GlitchMemories', 'Hexagonalize', 'Luminance', 'Rag', 'Megrim', 'Pixlize', 'Flashing', 'Swirl'];
 const whiteList = ['Shake', 'Soul', 'Megrim', 'Flashing', 'Rag'];
 class App extends React.Component {
   constructor(props) {
