@@ -25,6 +25,7 @@ class App extends React.Component {
         <div className="title">
           <span className="primary">Effect</span>
           <span className="red">Features</span>
+          <p style={{ fontSize: '17px', fontWeight: 700, }}>(Click the picture preview on the left)</p>
         </div>
         <div className="main">
           {
