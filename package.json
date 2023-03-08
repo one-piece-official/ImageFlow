@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/one-piece-official/ImageFlow.git"
+    "url": "git+https://github.com/csj5588/ImageFlow.git"
   },
   "author": "cuishijie",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/one-piece-official/ImageFlow/issues"
+    "url": "https://github.com/csj5588/ImageFlow/issues"
   },
-  "homepage": "https://github.com/one-piece-official/ImageFlow#README.md",
+  "homepage": "https://github.com/csj5588/ImageFlow#README.md",
   "dependencies": {
     "babel-preset-env": "^1.3.2",
     "babel-preset-es2016": "^6.24.1",
