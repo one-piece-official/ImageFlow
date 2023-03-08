@@ -9,8 +9,6 @@ import shaderConfigs from './transtions';
 import uniformsConfigs from './uniforms';
 import timeLoop from "./timeLoop";
 
-const ALT_URL = 'https://animagus.oss-cn-shanghai.aliyuncs.com/exampledir/aigc/32.jpg';
-
 const shaders = Shaders.create(shaderConfigs);
 
 export const Saturate = timeLoop(({
@@ -33,7 +31,7 @@ function ImageFlow(props) {
   const {
     width = 450,
     height = 720,
-    url = ALT_URL
+    url = ""
   } = props;
   return (
     <Surface width={width} height={height}>
