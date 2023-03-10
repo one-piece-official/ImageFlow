@@ -42231,8 +42231,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @name ImageFlow
  * @description 图片特效组件
  */
-var ALT_URL = 'https://animagus.oss-cn-shanghai.aliyuncs.com/exampledir/aigc/32.jpg';
-
 var shaders = _glReact.Shaders.create(_transtions.default);
 
 var Saturate = (0, _timeLoop.default)(function (_ref) {
@@ -42257,7 +42255,7 @@ function ImageFlow(props) {
       _props$height = props.height,
       height = _props$height === void 0 ? 720 : _props$height,
       _props$url = props.url,
-      url = _props$url === void 0 ? ALT_URL : _props$url;
+      url = _props$url === void 0 ? "" : _props$url;
   return _react.default.createElement(_glReactDom.Surface, {
     width: width,
     height: height
@@ -42615,7 +42613,7 @@ var head_1 = __importDefault(require("./head"));
 
 var footer_1 = __importDefault(require("./footer"));
 
-var list = ['ColourDistance', 'CrossWrap', 'CrossZoom', 'Shake', 'Dreamy', 'Flyeye', 'GlitchDisplace', 'GlitchMemories', 'Hexagonalize', 'Soul', 'Luminance', 'Rag', 'Megrim', 'Morph', 'Pixlize', 'Flashing', 'Swirl'];
+var list = ['Morph', 'Soul', 'ColourDistance', 'CrossWrap', 'CrossZoom', 'Shake', 'Dreamy', 'Flyeye', 'GlitchDisplace', 'GlitchMemories', 'Hexagonalize', 'Luminance', 'Rag', 'Megrim', 'Pixlize', 'Flashing', 'Swirl'];
 var whiteList = ['Shake', 'Soul', 'Megrim', 'Flashing', 'Rag'];
 
 var App = function (_super) {
@@ -42640,7 +42638,12 @@ var App = function (_super) {
       className: "primary"
     }, "Effect"), React.createElement("span", {
       className: "red"
-    }, "Features")), React.createElement("div", {
+    }, "Features"), React.createElement("p", {
+      style: {
+        fontSize: '17px',
+        fontWeight: 700
+      }
+    }, "(Click the picture preview on the left)")), React.createElement("div", {
       className: "main"
     }, list.map(function (type, idx) {
       return React.createElement("div", {
@@ -42656,7 +42659,7 @@ var App = function (_super) {
         rotate: !whiteList.includes(type),
         type: type,
         width: _this.state.width,
-        url: "https://one-piece-official.github.io/ImageFlow/bg.jpg"
+        url: "https://csj5588.github.io/ImageFlow/bg.jpg"
       }), React.createElement("div", {
         className: "describe"
       }, React.createElement("h1", null, type)));
@@ -42695,7 +42698,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50806" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62657" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
