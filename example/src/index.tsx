@@ -41,7 +41,7 @@ class App extends React.Component {
                     rotate={!whiteList.includes(type)}
                     type={type}
                     width={this.state.width}
-                    url="https://csj5588.github.io/ImageFlow/bg.jpg"
+                    url="https://one-piece-official.github.io/ImageFlow/bg.jpg"
                   />
                   <div className="describe">
                     <h1>{type}</h1>
